@@ -20,9 +20,31 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding-right: 115px;
-    padding-left: 115px;
+    padding-right: 75px;
+    padding-left: 75px;
     width: 1200px;
+  }
+
+  .header & {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding-top: 25px;
+    height: 56px;
+    overflow: hidden;
+
+    @media screen and (min-width: 480px) {
+      overflow: visible;
+    }
+    @media screen and (min-width: 768px) {
+      padding-top: 37px;
+      height: 87px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 50px;
+      height: 82px;
+    }
   }
 
   .section-hero & {
@@ -44,6 +66,24 @@
     @media screen and (min-width: 1200px) {
       padding-top: 52px;
       height: 665px;
+    }
+  }
+
+  .section-products & {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 121px;
+    padding-bottom: 98px;
+    background-color: $section-background-color;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 122px;
+      padding-bottom: 112px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 127px;
+      padding-bottom: 119px;
     }
   }
 }
