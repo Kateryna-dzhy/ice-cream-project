@@ -30,23 +30,20 @@ li {
   list-style: none;
 }
 .sviper-text {
-  position: relative;
+
   font-weight: 500;
   text-align: center;
   letter-spacing: 0.04em;
   color: $text-additional-color;
-  padding: 42px 66px 26px 56px;
-  background-color: $bgd-review;
-  z-index: 2;
+
   font-size: 12px;
   line-height: 2.55;
-display: inline;
-  background-image: repeating-linear-gradient (to top, $review-gradient 0px 1px, transperent 1px 31px);
+	background-image: repeating-linear-gradient(to top, #E1E1E1 0px 1px, transparent 1px 31px);
 
 @media screen and(min-width:768px){
   font-size: 14px;
   line-height: 2.16;
-  padding: 48px 80px 34px 80px;
+
 }
 
 
@@ -74,7 +71,20 @@ display: inline;
     }
   }
 }
+.slider-text-wrapper {
+    position: relative;
+	  padding: 42px 66px 26px 56px;
+  background-color: $bgd-review;
+  z-index: 2;
 
+  @media screen and(min-width:768px){
+  padding: 48px 80px 34px 80px;
+  }
+}
+ .sviper-dot-element{
+
+
+ }
 .sviper-name {
     font-weight: 500;
   font-size: 14px;
@@ -84,19 +94,19 @@ display: inline;
   margin-bottom: 30px;
   margin-top: 14px;
 
- &::before {
-     content: '';
-     background-image: url(../images/reviews/elements/dots.svg);
-     position: absolute;
-background-repeat: no-repeat;
-     background-size: contain;
-     width: 32px;
-    height: 4px;
-     fill: $accent-btn-hover-color;
-     top: 272px;
+//  &::before {
+//      content: '';
+//      background-image: url(../images/reviews/elements/dots.svg);
+//      position: absolute;
+// background-repeat: no-repeat;
+//      background-size: contain;
+//      width: 32px;
+//     height: 4px;
+//      fill: $accent-btn-hover-color;
+//      top: 272px;
   
-     left: 50%;
-     transform: translateX(-50%);}
+//      left: 50%;
+//      transform: translateX(-50%);}
 
   
   
